@@ -1,0 +1,31 @@
+<div class="top-stat container-fluid">
+<div class='central-logo'>
+    <img src='https://www.un.org/sites/un2.un.org/files/covid19_response_logo_horizontal_april_2020.png'/>
+</div>
+    
+
+<div class='count-div'>
+            <div class='inner-div' style="border-bottom: 8px solid #F75C5C">
+                <ul class="list-group list-group-vertical inner-list">
+                    <li class="list-group-item inner-list-item actual-num" [countUp]="total_active">0</li>
+                    <li class="list-group-item inner-list-item num-title">Total Active</li>
+                </ul>
+            </div>
+            <div class='inner-div' style="border-bottom: 8px solid #7A7A7A">
+                <ul class="list-group list-group-vertical inner-list">
+                    <li class="list-group-item inner-list-item actual-num" [countUp]="total_deaths">0</li>
+                    <li class="list-group-item inner-list-item num-title">Total Deaths</li>
+                    
+                </ul>
+            </div>
+            <div class='inner-div' style="border-bottom: 8px solid #35C572">
+                <ul class="list-group list-group-vertical inner-list">
+                    <li class="list-group-item inner-list-item actual-num" [countUp]="total_recovers">0</li>
+                    <li class="list-group-item inner-list-item num-title">Total recovered</li>
+                </ul>
+            </div>
+</div>
+
+</div>
+
+

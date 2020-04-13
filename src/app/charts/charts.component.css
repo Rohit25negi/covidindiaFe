@@ -1,0 +1,11 @@
+.charts{
+    width: 100%;
+}
+.covid-charts{
+    display: inline-block;
+
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #7A76EC;
+    width: 97%;
+}

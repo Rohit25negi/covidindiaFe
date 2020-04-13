@@ -1,0 +1,28 @@
+<div class='state-table'>
+    <h2 class='table-headin'> State Wise Data</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">State</th>
+          <th scope="col">Total confirmed</th>
+          <th scope="col">Total deaths</th>
+          <th scope="col">Total recovered</th>
+          <th scope="col">Total Active</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let state of stateCovidData; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            {{ state.state_name }}
+          </td>
+          <td>{{ state.total_corona_cases | number }}</td>
+          <td>{{ state.deaths_corona_cases | number }}</td>
+          <td>{{ state.recovered_corona_cases | number }}</td>
+          <td>{{ state.total_corona_cases - (state.recovered_corona_cases + state.deaths_corona_cases) | number }}</td>
+        </tr>
+        </tbody>
+      </table>
+      
+</div>
