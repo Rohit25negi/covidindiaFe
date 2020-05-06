@@ -12,13 +12,17 @@ import { StatetableComponent } from './statetable/statetable.component'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CountUpModule } from 'ngx-countup';
 import { HeadersectionComponent } from './headersection/headersection.component';
+import {NgApexchartsModule} from 'ng-apexcharts';
+import { TabledirectiveDirective } from './tabledirective.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     TopViewComponent,
     ChartsComponent,
     StatetableComponent,
-    HeadersectionComponent
+    HeadersectionComponent,
+    TabledirectiveDirective
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { HeadersectionComponent } from './headersection/headersection.component'
     HttpClientModule,
     GoogleChartsModule.forRoot('AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'),
     NgbModule,
-    CountUpModule
+    CountUpModule,
+    NgApexchartsModule
   ],
   providers: [CoviddataserviceService],
   bootstrap: [AppComponent]

@@ -32,9 +32,7 @@
               "src/assets/loader.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "http://d3js.org/d3.v3.min.js",
-              "http://d3js.org/topojson.v1.min.js",
-              "https://rawgit.com/Anujarya300/bubble_maps/master/data/geography-data/datamaps.none.js"
+              "node_modules/apexcharts/dist/apexcharts.min.js"
             ]
           },
           "configurations": {

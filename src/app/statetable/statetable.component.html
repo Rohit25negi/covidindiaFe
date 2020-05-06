@@ -3,17 +3,41 @@
     <table class="table table-striped">
         <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">State</th>
-          <th scope="col">Total confirmed</th>
-          <th scope="col">Total deaths</th>
-          <th scope="col">Total recovered</th>
-          <th scope="col">Total Active</th>
+          <th scope="col" sortable="state_name" (sort)="onSort($event)">
+            <div>
+              <span class='arrow'></span>
+              <span class='column-name'>State</span>
+            </div>
+            
+          </th>
+          <th scope="col" sortable="total_corona_cases" (sort)="onSort($event)">
+            <div>
+              <span class='arrow'></span>
+              <span class='column-name'>Total confirmed</span>
+            </div>
+          </th>
+          <th scope="col" sortable="deaths_corona_cases" (sort)="onSort($event)">
+            <div>
+              <span class='arrow'></span>
+              <span class='column-name'>Total deaths</span>
+            </div>
+          </th>
+          <th scope="col" sortable="recovered_corona_cases" (sort)="onSort($event)">
+            <div>
+              <span class='arrow'></span>
+              <span class='column-name'>Total recovered</span>
+            </div>
+          </th>
+          <th scope="col" sortable="" (sort)="onSort($event)">
+            <div>
+              <span class='arrow'></span>
+              <span class='column-name'>Total Active</span>
+            </div>
+          </th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let state of stateCovidData; index as i">
-          <th scope="row">{{ i + 1 }}</th>
           <td>
             {{ state.state_name }}
           </td>
